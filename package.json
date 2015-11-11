@@ -2,22 +2,20 @@
   "name": "badgeboard",
   "version": "0.1.0",
   "description": "badgeboard",
-  "keywords": ["badgeboard"],
-  "bin": {
-    "badgeboard": "./bin/badgeboard"
-  },
+  "keywords": [
+    "badgeboard"
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git://github.com/xudafeng/badgeboard.git"
   },
   "dependencies": {
+    "microtemplate": "~0.1.5"
   },
   "devDependencies": {
-    "mocha": "*",
-    "should": "*",
     "jshint": "*",
-    "istanbul": "*",
+    "koa": "~1.1.2",
     "pre-commit": "1.1.1"
   },
   "scripts": {

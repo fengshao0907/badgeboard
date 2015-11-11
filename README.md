@@ -1,5 +1,4 @@
-badgeboard
-====
+# badgeboard
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -23,13 +22,7 @@ badgeboard
 ## Installment
 
 ```bash
-$ npm i badgeboard -g
-```
-
-## Quick Start
-
-```bash
-$ badgeboard
+$ npm i badgeboard --save
 ```
 
 ## License

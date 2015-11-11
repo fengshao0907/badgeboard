@@ -13,7 +13,18 @@
 
 'use strict';
 
-var badgeboard = require('../');
+var badgeboard = require('..')({
+  left_text: 'macaca',
+  right_text: '100%',
+  left_color: '#555',
+  right_color: '#dfb317'
+});
+var Koa = require('koa');
 
-describe('test', function(){
+var app = new Koa();
+
+app.use(badgeboard);
+
+app.listen(3000, function() {
+  console.log('visit localhost:3000');
 });
