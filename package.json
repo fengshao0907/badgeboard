@@ -1,6 +1,6 @@
 {
   "name": "badgeboard",
-  "version": "0.1.0",
+  "version": "0.1.4",
   "description": "badgeboard",
   "keywords": [
     "badgeboard"
@@ -8,7 +8,7 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/xudafeng/badgeboard.git"
+    "url": "git://github.com/macacajs/badgeboard.git"
   },
   "dependencies": {
     "lodash": "~3.10.1",
@@ -26,7 +26,7 @@
   "pre-commit": [
     "jshint"
   ],
-  "homepage": "https://github.com/xudafeng/badgeboard",
+  "homepage": "https://github.com/macacajs/badgeboard",
   "author": "xudafeng",
   "email": "xudafeng@126.com",
   "blog": "http://xdf.me",
