@@ -13,18 +13,20 @@
 
 'use strict';
 
-var badgeboard = require('..')({
-  left_text: 'macaca',
-  right_text: '100%',
-  left_color: '#555',
-  right_color: '#dfb317'
-});
+var _ = require('lodash');
+var badgeboard = require('..');
+
+var port = 3000;
 var Koa = require('koa');
 
 var app = new Koa();
 
-app.use(badgeboard);
+app.use(function *() {
+  this.type = 'image/svg+xml;charset=utf-8';
+  console.log(_.merge(badgeboard.DEFAULT_DATA, this.query));
+  this.body = badgeboard(_.merge(badgeboard.DEFAULT_DATA, this.query));
+});
 
-app.listen(3000, function() {
-  console.log('visit localhost:3000');
+app.listen(port, function() {
+  console.log('visit localhost:%d', port);
 });
